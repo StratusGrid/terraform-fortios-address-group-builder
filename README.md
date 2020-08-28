@@ -1,5 +1,5 @@
 ### Description
-This module takes a map of network configurations and makes address groups for each one, nested in an address group.
+This module takes a map of network configurations and makes address objects for each one, nested in an address group.
 
 ### Example Configuration
 ```
