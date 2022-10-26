@@ -1,8 +1,10 @@
 terraform {
+  required_version = "~> 1.1"
+
   required_providers {
     fortios = {
-      source = "terraform-providers/fortios"
+      source  = "fortinetdev/fortios"
+      version = ">= 1.10"
     }
   }
-  required_version = ">= 0.13"
 }
