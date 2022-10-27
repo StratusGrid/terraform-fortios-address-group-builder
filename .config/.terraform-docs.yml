@@ -1,0 +1,47 @@
+version: ""
+
+formatter: markdown table
+
+name: terraform-fortios-address-group-builder
+
+content: |-
+  # terraform-fortios-address-group-builder
+
+  GitHub: [StratusGrid/terraform-fortios-address-group-builder](https://github.com/StratusGrid/terraform-fortios-address-group-builder)
+
+  This module takes a map of network configurations and makes address objects for each one, nested in an address group.
+
+  ## Example Usage:
+
+  ```hcl
+  {{ include "examples/example1.tfnot" }}
+  ```
+  ---
+
+  {{ .Requirements }}
+
+  {{ .Resources }}
+
+  {{ .Inputs }}
+
+  {{ .Outputs }}
+
+  ---
+
+  <span style="color:red">Note:</span> Manual changes to the README will be overwritten when the documentation is updated. To update the documentation, run `terraform-docs -c .config/.terraform-docs.yml .`
+
+sections:
+  show:
+    - resources
+    - inputs
+    - outputs
+    - providers
+    - requirements
+
+sort:
+  enabled: true
+  by: name
+
+output:
+  file: README.md
+  mode: replace

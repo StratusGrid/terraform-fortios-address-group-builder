@@ -10,7 +10,7 @@ variable "comment" {
 
 variable "address_object_subnets" {
   description = "An address object is created for each subnet, and this is appended to the group name for objects."
-  type        = map(object(
+  type = map(object(
     {
       network = string
       mask    = string

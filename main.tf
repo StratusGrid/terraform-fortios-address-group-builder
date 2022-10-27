@@ -15,7 +15,7 @@ resource "fortios_firewall_addrgrp" "this" {
   dynamic "member" {
     for_each = var.address_object_subnets
 
-    content{
+    content {
       name = fortios_firewall_address.this[member.key].name
     }
   }
